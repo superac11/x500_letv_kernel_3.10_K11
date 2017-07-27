@@ -309,6 +309,14 @@ config CPU_FREQ_GOV_HOTPLUG
 
 	  If in doubt, say N.
 
+config CPU_FREQ_GOV_SMARTASS2
+         tristate "'smartassV2' cpufreq governor"
+         depends on CPU_FREQ
+         help
+           'smartassV2' - a "smart" optimized governor !
+	   
+	   
+
 config GENERIC_CPUFREQ_CPU0
 	tristate "Generic CPU0 cpufreq driver"
 	depends on HAVE_CLK && REGULATOR && PM_OPP && OF
